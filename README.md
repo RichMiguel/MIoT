@@ -47,9 +47,6 @@ flowchart LR
 
 ## Dashboard Preview
 
-> [!NOTE]
-> The preview images below are placeholders stored in `assets/`. Replace `assets/preview-desktop.png` and `assets/preview-mobile.png` with actual screenshots when publishing a release.
-
 <table>
   <tr>
     <th width="68%">Desktop Workstation (<code>MIoT-Desktop</code>)</th>
@@ -197,17 +194,3 @@ void loop() {
 * **Batch pins**: `{"V0":27.30,"V1":64,"V2":true}`
 
 ---
-
-## Checksum Verification (SHA-256)
-
-Verify downloaded binaries against the release checksums before installation:
-
-```powershell
-# Windows (PowerShell)
-Get-FileHash .\MIoT-Desktop-1.0.0.msi -Algorithm SHA256
-```
-
-```bash
-# Linux / macOS
-sha256sum MIoT-v1.0.0.apk MIoT-v1.0.0.zip
-```
